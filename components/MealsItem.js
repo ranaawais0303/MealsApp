@@ -9,6 +9,7 @@ import {
 } from "react-native";
 
 function MealsItem({ title, duration, imageUrl, complexity, affordability }) {
+  console.log(imageUrl);
   return (
     <View style={styles.mealItem}>
       <Pressable
@@ -19,7 +20,9 @@ function MealsItem({ title, duration, imageUrl, complexity, affordability }) {
           <View>
             <Image
               style={styles.image}
-              source={{ uri: imageUrl, cache: "only-if-cached" }}
+              source={{
+                uri: imageUrl,
+              }}
             />
             <Text style={styles.title}>{title}</Text>
           </View>
@@ -56,7 +59,8 @@ const styles = StyleSheet.create({
 
   ///////////////
   image: {
-    backgroundColor: "red",
+    // backgroundColor: "red",
+
     width: "100%",
     height: 200,
   },
