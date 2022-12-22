@@ -9,7 +9,6 @@ import {
 } from "react-native";
 
 function MealsItem({ title, duration, imageUrl, complexity, affordability }) {
-  console.log(imageUrl);
   return (
     <View style={styles.mealItem}>
       <Pressable
