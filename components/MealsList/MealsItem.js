@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
+import MealDetails from "../MealDetails";
 import {
   View,
   Text,
@@ -8,7 +9,6 @@ import {
   Pressable,
   Platform,
 } from "react-native";
-import MealDetails from "./MealDetails";
 
 function MealsItem({
   id,
